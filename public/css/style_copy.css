@@ -1,0 +1,318 @@
+/* reset ================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #eaf6fd;
+  color: #000000;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #2d3133;
+  font-size: 14px;
+}
+
+a:hover {
+  transition: all 0.3s ease;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* top ================================ */
+.top-wrapper {
+  max-width: 1200px;
+  min-width: 920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto;
+  padding: 60px;
+
+}
+
+.top-detail {
+  width: 36%;
+  min-width: 320px;
+
+
+}
+
+.top-detail .subtitle {
+  margin-bottom: 4px;
+
+}
+
+.top-detail .title {
+  margin-bottom: 24px;
+
+}
+
+.top-detail .description {
+  margin-bottom: 40px;
+
+}
+
+.top-detail .index-button {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #1760a0;
+  background-color: #ffffff;
+  border: 2px solid #1760a0;
+  border-radius: 5px;
+}
+
+.top-detail .index-button:hover {
+  color: #ffffff;
+  background-color:  #1760a0;
+}
+
+
+.index-button {
+  cursor: pointer;
+  background-color: brown;
+  border: 1px solid magenta;
+}
+
+.top-image {
+  width: 64%;
+  text-align: center;
+}
+
+.top-image img {
+  width: 80%;
+  border-radius: 10px;
+
+}
+
+/* header ================================ */
+header {
+  height: 60px;
+  background-color: #1760a0;
+}
+
+.header-logo {
+  margin-left: 56px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+  color: #ffffff;
+  display: inline;
+}
+
+.header-logo:hover {
+  color: #dddddd;
+}
+
+/* container ================================ */
+.container {
+  width: 80%;
+  min-width: 360px;
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.container-header .new-button {
+  background: #ffffff;
+  border-radius: 30px;
+  width: 120px;
+  height: 45px;
+  line-height: 43px;
+  text-align: center;
+  color: #1760a0;
+  border: 2px solid #1760a0;
+}
+.container-header .new-button:hover {
+  background-color: #1760a0;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.container-header h1 {
+  font-size: 24px;
+}
+
+/* index ================================ */
+.table-head {
+  display: flex;
+  background-color: #b7cadc;
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 24px;
+  color: #ffffff;
+}
+
+
+
+.table-body {
+  background-color: #ffffff;
+}
+
+.table-body li {
+  height: 72px;
+  border: 1px solid #f0f4f9;
+  border-top: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.table-body .name-column {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 48px;
+  color: #000000;
+}
+
+.item-data {
+  display: flex;
+}
+
+.item-menu {
+  display: flex;
+}
+
+.item-menu form {
+  width: 60px;
+  text-align: center;
+}
+
+.item-menu form input {
+  font-size: 16px;
+  color: #dddddd;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.item-menu form input:hover {
+  color: #cc0000;
+  transition: all 0.3s ease;
+}
+
+.item-menu a {
+  width: 60px;
+  font-size: 16px;
+  color: #dddddd;
+  text-align: center;
+}
+
+.item-menu a:hover {
+  color: #1760a0;
+}
+
+/* new, edit ================================ */
+.item-form-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #f0f4f9;
+  border-radius: 5px;
+  padding: 32px;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #dddddd;
+}
+
+.item-form-wrapper input[type="text"] {
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 14px;
+}
+
+.item-form-wrapper input[type="submit"] {
+  display: block;
+  width: 120px;
+  height: 45px;
+  margin-top: 24px;
+  margin-left: auto;
+  border-radius: 30px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #1760a0;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #1760a0;
+}
+
+.item-form-wrapper input[type="submit"]:hover {
+  background-color: #1760a0;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.cancel-button {
+  display: block;
+  width: 100px;
+  height: 45px;
+  margin-top: 24px;
+  margin-right: auto;
+  border-radius: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 45px;
+  background-color: #ffffff;
+  color: #1760a0;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #1760a0;
+}
+
+.cancel-button:hover {
+  background-color: #1760a0;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
