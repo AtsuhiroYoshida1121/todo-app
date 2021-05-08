@@ -4,10 +4,10 @@ const mysql = require('mysql');
 
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '0153',
-    database:'items'
+    host: 'us-cdbr-east-03.cleardb.com',
+    user: 'b5852baf8e30d9',
+    password: '9482c776',
+    database:'heroku_e651c01b88a0c09'
 });
 
 app.use(express.static('public'));
@@ -76,4 +76,4 @@ app.post('/update/:id', (req,res) => {
     );
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000)
